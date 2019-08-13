@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset ="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding:10px;
+  height: 300px;
+  margin-right:20px;
+  margin-bottom: 20px;
+   /* Should be removed. Only for demonstration */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 992px) {
+  .column {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width:991px) {
+  .column {
+    width:45%;
+}
+}
+@media (max-width: 767px) {
+  .column {
+      width:100%;
+    }
+  }
+h2{
+  color:red;
+}
+</style>
+</head>
+<body>
+<h1 align="centre"> FLOWERS </h1>
+<div class="row">
+  <div class="column"style="background-color:#aaa;">
+    <h2 align="right" style="background-color:green">Lotus</h2>
+    <p>Lotus is found in many colors like pink,red,white,yellow,violet etc.. But pink lotus is most beautiful and prominient.Its grows in water.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2 align="right" style="background-color:yellow">Lily</h2>
+    <p>Lily is white in color. It looks very graceful and smells heaven.</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2 align="right" style="background-color:pink">Rose</h2>
+    <p>rose is red in color.It smells nice. Its beautiful.</p>
+  </div>
+</div>
+</body>
+</html>
